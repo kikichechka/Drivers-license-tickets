@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_card_item_category_margin">20dp</dimen>
+    <dimen name="custom_card_item_category_corner_radius">14dp</dimen>
+    <dimen name="custom_card_item_category_height">74dp</dimen>
+    <dimen name="app_bar_layout_margin_start">8dp</dimen>
+    <dimen name="common_margin_20">20dp</dimen>
+    <dimen name="common_margin_10">10dp</dimen>
+    <dimen name="icon_card_view_corner_radius">14dp</dimen>
+    <dimen name="text_answer_margin_start">5dp</dimen>
+</resources>

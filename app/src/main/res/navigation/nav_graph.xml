@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainChoiceFragment">
+
+    <fragment
+        android:id="@+id/mainChoiceFragment"
+        android:name="com.example.driverslicensetickets.fragments.MainChoiceFragment"
+        android:label="fragment_main_choice"
+        tools:layout="@layout/fragment_main_choice" >
+        <action
+            android:id="@+id/action_mainChoiceFragment_to_testingFragment"
+            app:destination="@id/testingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testingFragment"
+        android:name="com.example.driverslicensetickets.fragments.TestingFragment"
+        android:label="fragment_testing"
+        tools:layout="@layout/fragment_testing" >
+        <action
+            android:id="@+id/action_testingFragment_to_testResultsFragment"
+            app:destination="@id/testResultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testResultsFragment"
+        android:name="com.example.driverslicensetickets.fragments.TestResultsFragment"
+        android:label="fragment_test_results"
+        tools:layout="@layout/fragment_test_results" />
+</navigation>

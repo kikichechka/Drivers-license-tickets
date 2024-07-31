@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style_bar">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="style_bar_test_result">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="style_title_category">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="style_text_item_answer">
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>
