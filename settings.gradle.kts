@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Drivers license tickets"
 include(":app")
- 
+include(":domain")
+include(":data")

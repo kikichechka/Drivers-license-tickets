@@ -1,5 +1,7 @@
 package com.example.driverslicensetickets.model
 
+import com.example.driverslicensetickets.TicketModel
+
 
 data class Ticket(
     val title: String,
@@ -14,17 +16,17 @@ data class Ticket(
     val id: String
 )
 
-//fun TicketModel.toMap(): Ticket {
-//    return Ticket(
-//        title = title,
-//        ticketNumber = ticketNumber,
-//        ticketCategory = ticketCategory,
-//        image = image,
-//        question = question,
-//        answers = answers.map { it.toMap() },
-//        correctAnswer = correctAnswer,
-//        answerTip = answerTip,
-//        topic = topic,
-//        id = id
-//    )
-//}
+fun TicketModel.toMap(): Ticket {
+    return Ticket(
+        title = title,
+        ticketNumber = ticketNumber,
+        ticketCategory = ticketCategory,
+        image = image,
+        question = question,
+        answers = answers.map { it.toMap() },
+        correctAnswer = correctAnswer,
+        answerTip = answerTip,
+        topic = topic,
+        id = id
+    )
+}

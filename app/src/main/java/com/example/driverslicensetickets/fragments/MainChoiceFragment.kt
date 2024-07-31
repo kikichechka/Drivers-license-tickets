@@ -43,21 +43,21 @@ class MainChoiceFragment : Fragment() {
         binding.categoryB.setIcon(resources.getDrawable(R.drawable.icon_frames_car, null))
         binding.categoryB.setTitle(resources.getString(R.string.category_b))
 
-        viewLifecycleOwner.lifecycleScope.launch {
+//        viewLifecycleOwner.lifecycleScope.launch {
 //            viewModel.ticketsCategoryA.collect {
 //                binding.categoryA.setOnClickListener {
 //                    findNavController().navigate(R.id.action_mainChoiceFragment_to_testingFragment)
 //                }
 //            }
-        }
-
-        viewLifecycleOwner.lifecycleScope.launch {
+//        }
+//
+//        viewLifecycleOwner.lifecycleScope.launch {
 //            viewModel.ticketsCategoryB.collect {
 //                binding.categoryB.setOnClickListener {
 //                    findNavController().navigate(R.id.action_mainChoiceFragment_to_testingFragment)
 //                }
 //            }
-        }
+//        }
     }
 
     override fun onDestroy() {
