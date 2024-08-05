@@ -5,7 +5,7 @@
     <string name="select_category">Выбрать категорию</string>
     <string name="category_a">Категория А</string>
     <string name="category_b">Категория В</string>
-    <string name="questions_for_category_a">Вопросы для категории А</string>
+    <string name="questions_for_category">Вопросы для категории </string>
     <string name="dot_separator">.</string>
     <string name="test_result">Итоги теста</string>
     <string name="count_correct_answers">Количество правильных ответов</string>
@@ -13,4 +13,5 @@
     <string name="separator">/</string>
     <string name="my_mistakes">Мои ошибки</string>
     <string name="repeat_test">Повторить тест</string>
+    <string name="check_your_internet_connection">Проверьте соединение с интернетом</string>
 </resources>

@@ -1,8 +1,10 @@
 package com.example.driverslicensetickets.model
 
+import android.os.Parcelable
 import com.example.driverslicensetickets.TicketModel
+import kotlinx.parcelize.Parcelize
 
-
+@Parcelize
 data class Ticket(
     val title: String,
     val ticketNumber: String,
@@ -14,7 +16,23 @@ data class Ticket(
     val answerTip: String,
     val topic: List<String>,
     val id: String
-)
+) : Parcelable
+
+fun Ticket.mapToInCorrect(position: Int): IncorrectTicket {
+    return IncorrectTicket(
+        title = title,
+        ticketNumber = ticketNumber,
+        ticketCategory = ticketCategory,
+        image = image,
+        question = question,
+        answers = answers,
+        correctAnswer = correctAnswer,
+        inCorrectAnswer = position,
+        answerTip = answerTip,
+        topic = topic,
+        id = id
+    )
+}
 
 fun TicketModel.toMap(): Ticket {
     return Ticket(

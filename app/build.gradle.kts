@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("kotlin-kapt")
     alias(libs.plugins.dagger)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -60,6 +61,8 @@ dependencies {
 
     implementation(libs.hilt)
     kapt(libs.hiltCompiler)
+
+    implementation(libs.glide)
 }
 
 kapt {

@@ -9,23 +9,49 @@
         android:id="@+id/mainChoiceFragment"
         android:name="com.example.driverslicensetickets.fragments.MainChoiceFragment"
         android:label="fragment_main_choice"
-        tools:layout="@layout/fragment_main_choice" >
+        tools:layout="@layout/fragment_main_choice">
         <action
             android:id="@+id/action_mainChoiceFragment_to_testingFragment"
-            app:destination="@id/testingFragment" />
+            app:destination="@id/testingFragment">
+            <argument
+                android:name="ListTickets"
+                app:argType="com.example.driverslicensetickets.model.ListTickets" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/testingFragment"
         android:name="com.example.driverslicensetickets.fragments.TestingFragment"
         android:label="fragment_testing"
-        tools:layout="@layout/fragment_testing" >
+        tools:layout="@layout/fragment_testing">
         <action
             android:id="@+id/action_testingFragment_to_testResultsFragment"
-            app:destination="@id/testResultsFragment" />
+            app:destination="@id/testResultsFragment"
+            app:popUpTo="@id/mainChoiceFragment">
+            <argument
+                android:name="ListInCorrectTickets"
+                app:argType="com.example.driverslicensetickets.model.ListInCorrectTickets" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/testResultsFragment"
         android:name="com.example.driverslicensetickets.fragments.TestResultsFragment"
         android:label="fragment_test_results"
-        tools:layout="@layout/fragment_test_results" />
+        tools:layout="@layout/fragment_test_results">
+        <action
+            android:id="@+id/action_testResultsFragment_to_mistakesFragment"
+            app:destination="@id/mistakesFragment"
+            app:popUpTo="@id/mainChoiceFragment">
+            <argument
+                android:name="ListInCorrectTickets"
+                app:argType="com.example.driverslicensetickets.model.ListInCorrectTickets" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/mistakesFragment"
+        android:name="com.example.driverslicensetickets.fragments.MistakesFragment"
+        android:label="MistakesFragment" >
+        <action
+            android:id="@+id/action_mistakesFragment_to_mainChoiceFragment"
+            app:destination="@id/mainChoiceFragment" />
+    </fragment>
 </navigation>

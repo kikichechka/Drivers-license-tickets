@@ -3,19 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
+    android:background="@color/light_background"
     app:cardCornerRadius="@dimen/icon_card_view_corner_radius">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:layout_marginHorizontal="2dp"
         android:layout_marginBottom="@dimen/common_margin_10"
+        android:background="@color/white"
         app:cardCornerRadius="@dimen/icon_card_view_corner_radius">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/common_margin_20"
             android:layout_marginVertical="@dimen/common_margin_20"
             android:orientation="horizontal">
@@ -28,15 +30,16 @@
                 android:textAppearance="@style/style_text_item_answer" />
 
             <TextView
+                android:id="@+id/separator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/dot_separator" />
 
             <TextView
+                android:id="@+id/answer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/text_answer_margin_start"
-                android:text="Разрешен только при технической неисправности ТС"
                 android:textAppearance="@style/style_text_item_answer" />
         </LinearLayout>
 

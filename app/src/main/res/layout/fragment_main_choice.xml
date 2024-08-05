@@ -27,11 +27,13 @@
     
     <com.example.driverslicensetickets.CustomCardItemCategory
         android:id="@+id/category_a"
+        android:clickable="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <com.example.driverslicensetickets.CustomCardItemCategory
         android:id="@+id/category_b"
+        android:clickable="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
